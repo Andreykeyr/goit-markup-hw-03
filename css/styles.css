@@ -198,12 +198,17 @@ a {
    display: flex;
 }
 
+.section-two-list:last-child{
+   margin-right: 0px;
+}
+
 .section-two-tgp{
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #434455;
    margin-right: 4px;
+   width: calc((260% - 72px) / 4);
 }
 
 
@@ -225,7 +230,7 @@ a {
 }
 
 .section-three-item {
-   padding-right: 24px;
+   width: calc((100% - 48px) / 2 );
 }
 .container-four {
    width: 1158px;
@@ -237,9 +242,6 @@ a {
 
 .section-tgp {
    padding: 120px 0px 0px 0px;
-}
-.section-four-list {
-   display: flex;
 }
 .section-four-background {
    background-color: #F4F4FD
@@ -263,12 +265,19 @@ a {
    text-align: center;
 }
 
-.list-three {
+.section-four-list {
+   display: flex;
+   justify-content: space-between;
+}
+
+.list-employee {
    margin-right: 24px;
+   text-align: center;
+   width: calc((100% - 72px) / 3);
    margin-bottom: 120px;
    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.list-three:last-child {
+.list-employee:last-child {
    margin-right: 0px;
 }
 
@@ -333,10 +342,12 @@ button {
 
 /*==Portfolio==*/
 
+.btn-nav {
+   padding: 96px 0px 120px 0px
+}
+
 .btn-port {
    font-family: "Roboto", sans-serif;
-   font-weight: 500;
-   font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.04em;
    color: #4d5ae5;
@@ -344,6 +355,7 @@ button {
    cursor: pointer;
    border-radius: 4px;
    padding: 12px 24px;
+   border: 1px solid #e7e9fc;
 }
 
 .btn-port:hover, .btn-port:focus {
@@ -356,7 +368,7 @@ button {
 .btn-list {
    display: flex;
    justify-content: center;
-   flex-wrap: wrap;
+   width: 1158px;
    margin-bottom: 72px;
 }
 
@@ -384,4 +396,26 @@ button {
 
 .btn-list-item:last-child {
    margin-right: 0px;
+}
+
+.portfolio-list {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0px 15x 0px 15px
+}
+
+.portfolio-card {
+   width: calc((100% - 48px) / 3);
+   margin-right: 24px;
+   margin-bottom: 48px;
+}
+
+.portfolio-card:nth-last-child(3n+1)
+{
+   margin-right: 0px;
+}
+
+.card-content {
+   padding: 32px 16px;
+   border: 1px solid #e7e9fc;
 }
